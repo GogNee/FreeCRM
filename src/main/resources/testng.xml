@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- This xml is created for running multiple classes in one run, we can 
+	100s classes, it saves time -->
+<!-- Also we can create testng_sanity.xml for running 2 or 3 classes and 
+	testng_regression.xml for regression test cases -->
+<suite name="FREE CRM Application Test Automation Test Suite">
+
+	<listeners>
+		<listener
+			class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Free CRM App Test Cases">
+		<classes>
+			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+			<class name="com.crm.qa.testcases.HomePageTest"></class>
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+			
+
+		</classes>
+	</test>
+
+</suite>
